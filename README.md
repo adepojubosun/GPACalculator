@@ -1,8 +1,8 @@
 # GPACalculator
 
-Terminal-Based College GPA Calculator 
+Commandline-Based College GPA Calculator 
 
-Application allow users to select from several options and retrieves necessary information to streamline the calculation of Grade point average (GPA) for a college semester and Cummulative Grade point average (CGPA) for multiple school years
+A commandline based application allow users to select from several options and input necessary information for the calculation of Grade point average (GPA) for a college semester and Cummulative Grade point average (CGPA) for multiple school years
 
 ### **Requirements**
 

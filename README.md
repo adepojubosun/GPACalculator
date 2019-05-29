@@ -12,4 +12,4 @@ Application allow users to select from several options and retrieves necessary i
 
 ### **Execution**
 
-> run `dotnet run` in project base directory.
+> execute `dotnet run` in project base directory.

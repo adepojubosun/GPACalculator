@@ -1,0 +1,11 @@
+/Users/maverick/Projects/GPACalculator/bin/Debug/netcoreapp2.1/GPACalculator.deps.json
+/Users/maverick/Projects/GPACalculator/bin/Debug/netcoreapp2.1/GPACalculator.runtimeconfig.json
+/Users/maverick/Projects/GPACalculator/bin/Debug/netcoreapp2.1/GPACalculator.runtimeconfig.dev.json
+/Users/maverick/Projects/GPACalculator/bin/Debug/netcoreapp2.1/GPACalculator.dll
+/Users/maverick/Projects/GPACalculator/bin/Debug/netcoreapp2.1/GPACalculator.pdb
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.csprojAssemblyReference.cache
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.csproj.CoreCompileInputs.cache
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.AssemblyInfoInputs.cache
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.AssemblyInfo.cs
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.dll
+/Users/maverick/Projects/GPACalculator/obj/Debug/netcoreapp2.1/GPACalculator.pdb

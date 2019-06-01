@@ -16,7 +16,8 @@ namespace GPACalculator.Controller
         };
 
 
-        public void MainSemesterMenu(){
+        public void MainSemesterMenu()
+        {
             var isStatusComplete = false;
             int yearNumber = 1;
             Year year = new Year(yearNumber);
@@ -26,7 +27,8 @@ namespace GPACalculator.Controller
             Queue<Year> years = new Queue<Year>();
             years.Enqueue(year);
             Year[] yearArr = years.ToArray();
-            while(!isStatusComplete){
+            while(!isStatusComplete)
+            {
                 Console.WriteLine("Select from Options:\n[0]Calculate CGPA");
                 Console.WriteLine("[16]Add New Year");
                 Console.WriteLine("[17]Quit");
@@ -72,8 +74,7 @@ namespace GPACalculator.Controller
                     default:
                     Console.WriteLine("Invalid Input");
                     continue;
-
-            }
+                }
             }
  
         }
@@ -86,10 +87,12 @@ namespace GPACalculator.Controller
         {
             Console.WriteLine($"Courses Count {courses.Count}\n");
             var count = 1;
-            foreach(var course in courses){
+            foreach(var course in courses)
+            {
             Console.WriteLine(count+++". "+course.PrintDetails());
             }
-            try{
+            try
+            {
             Console.WriteLine("Select from Options:\n [1]Add Course\n [2]Calculate GPA\n [3]Go Back");
             var input = Convert.ToInt32(Console.ReadLine());
             switch(input)

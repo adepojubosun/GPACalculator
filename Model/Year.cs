@@ -19,6 +19,10 @@ namespace GPACalculator.Model
             return Semester;
         }
 
+        public Semester getSemester(int semester){
+            return Semester[semester];
+        }
+
         public string PrintYear(){
             return "Year "+YearNumber+"";
         }

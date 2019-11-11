@@ -10,8 +10,6 @@ namespace GPACalculator
         public static void Main(string[] args)
         {
             CoursesOperation op = new CoursesOperation();
-            Semester semester = new Semester(SemesterType.Fall);
-           // op.MainCourseMenu(semester);
             op.MainSemesterMenu();
         }
 

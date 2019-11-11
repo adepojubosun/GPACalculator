@@ -98,6 +98,11 @@ namespace GPACalculator.Controller
                             Year year = new Year(yearNumber++);
                             years.Enqueue(year);
                             continue;
+                        case 8:
+                            SaveData(years.ToArray());
+                            Console.WriteLine("Press any key to continue");
+                            Console.ReadKey();
+                            continue;
                         case 9:
                             isStatusComplete = true;
                             Console.WriteLine("Goodbye");
@@ -202,7 +207,7 @@ namespace GPACalculator.Controller
                 {
                     Console.WriteLine("");
                     Console.WriteLine("------------------------------");
-                    
+
                     Console.Write($"\nSelect from Options:\n[1]Add Course\n[2]Calculate GPA\n[3]Go Back\n");
                     Console.WriteLine("------------------------------");
                     Console.WriteLine("");
@@ -305,6 +310,47 @@ namespace GPACalculator.Controller
                 }
             }
             return String.Format("Your overall CGPA {0}", gradePointTotal / creditsTotal);
+        }
+
+        public void SaveData(Year[] years)
+        {
+            try
+            {
+                Console.WriteLine("Enter FirstName and LastName (separated by space):");
+                var studentName = Console.ReadLine();
+
+                Student student = new Student(studentName.Split(" ")[0], studentName.Split(" ")[1]);
+                Console.WriteLine("Enter College major:");
+                student.Major = Console.ReadLine();
+                Console.WriteLine("Enter College name:");
+                student.CollegeName = Console.ReadLine();
+
+                var initialDetails = $"Student name:{student.FullName}\nStudent major:{student.Major}\nCollege:{student.CollegeName}\n";
+                var courseList = "Courses include\n";
+                var CGPA = "Overall CGPA:" + CalculateCGPA(years);
+                foreach (var year in years)
+                {
+                    foreach (var semester in year.GetSemesters())
+                    {
+                        foreach (var course in semester.Courses)
+                        {
+                            courseList += $"{course.PrintDetails()}\n";
+                        }
+                    }
+                }
+
+                FileOperation.FileSave(initialDetails+courseList+CGPA);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving your data");
+
+            }
+
+
+
+
+
         }
 
     }
